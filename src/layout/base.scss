@@ -1,0 +1,40 @@
+$breakpoints: (
+  sm: 750px,
+  md: 960px,
+  lg: 1200px,
+);
+
+@function responsive($pixel-value) {
+  @return "@media(min-width: " + ($pixel-value) + "px)";
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  color: #e2e1e7;
+  background-color: #171115;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  font-family: "Staatliches", cursive;
+  font-weight: 300;
+}
+
+a {
+  color: #e2e1e7;
+  text-decoration: none;
+}
+
+button {
+  color: #e2e1e7;
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+  padding: 0;
+  width: fit-content;
+}
